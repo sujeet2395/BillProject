@@ -18,6 +18,15 @@ public class VegetableBill {
 		this.preferred=preferred;
 		veges=new ArrayList<>();
 	}
+	
+	public boolean isPreferred() {
+		return preferred;
+	}
+
+	public void setPreferred(boolean preferred) {
+		this.preferred = preferred;
+	}
+
 	public void add(Item i)
 	{
 		veges.add(i);

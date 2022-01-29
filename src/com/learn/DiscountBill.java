@@ -10,7 +10,7 @@ public class DiscountBill extends VegetableBill{
 		int count=0;
 		for(Item item:veges)
 		{
-			count+=item.getDiscount()>0?1:0;
+			count+=item.getDiscount()>0 && isPreferred()?1:0;
 		}
 		return count;
 	}
